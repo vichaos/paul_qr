@@ -4,7 +4,7 @@ Rails.application.routes.draw do
     resources :reports
     root to: "reports#index"
   end
-  # root "backend#reports"
+  root to: "backend/reports#index"
 
 
   # The priority is based upon order of creation: first created -> highest priority.
