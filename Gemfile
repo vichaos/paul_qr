@@ -54,4 +54,5 @@ gem 'the_role', '~> 3.0.0'
 gem 'inherited_resources'
 gem 'puma'
 gem 'cloudinary'
+gem 'carrierwave-google_drive'
 

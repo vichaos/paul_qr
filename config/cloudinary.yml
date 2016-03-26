@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: hgfbiaabx
+  api_key: '266523769778553'
+  api_secret: rQJDSytcHsrQj367itSpIxhIxJ0
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: hgfbiaabx
+  api_key: '266523769778553'
+  api_secret: rQJDSytcHsrQj367itSpIxhIxJ0
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: hgfbiaabx
+  api_key: '266523769778553'
+  api_secret: rQJDSytcHsrQj367itSpIxhIxJ0
+  enhance_image_tag: true
+  static_image_support: false
