@@ -1,4 +1,4 @@
-class PagesController < ActionController
+class PagesController < ApplicationController
   before_action :login_required, except: [ :index, :show ]
   before_action :role_required,  except: [ :index, :show ]
 
