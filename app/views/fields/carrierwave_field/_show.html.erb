@@ -1,0 +1,15 @@
+
+
+<%= qr_url = request.protocol + request.host_with_port + field.url %>
+<% qrcode = RQRCode::QRCode.new(qr_url) %>
+<% #@png = qrcode.as_png(fill: 'white', color: 'black', size: 200, border_modules: 1,module_px_size: 1, file: "/tmp/github-qrcode.png" ) %>
+<% @png = qrcode.as_png(file: "/tmp/github-qrcode.png" ) %>
+<br/>
+<%= image_tag @png.to_data_url %>
+
+
+
+
+
+
+
