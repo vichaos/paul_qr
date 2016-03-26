@@ -51,4 +51,5 @@ gem "jquery-fileupload-rails"
 gem 'rqrcode'
 gem 'the_role', '~> 3.0.0'
 gem 'inherited_resources'
+gem 'puma'
 
