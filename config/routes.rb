@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
-  TheRoleManagementPanel::Routes.mixin(self)
+  # TheRoleManagementPanel::Routes.mixin(self)
   namespace :backend do
     resources :reports
     root to: "reports#index"
   end
+  root "backend#reports"
 
 
   # The priority is based upon order of creation: first created -> highest priority.
