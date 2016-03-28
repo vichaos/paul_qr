@@ -55,4 +55,6 @@ gem 'inherited_resources'
 gem 'puma'
 gem 'cloudinary'
 gem 'carrierwave-google_drive'
-
+gem 'wash_out'
+gem 'savon'
+gem 'rack-wwwhisper', '~> 1.0'
