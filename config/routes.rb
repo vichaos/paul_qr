@@ -2,11 +2,9 @@ Rails.application.routes.draw do
   # TheRoleManagementPanel::Routes.mixin(self)
   namespace :backend do
     resources :reports
-    wash_out :reports
     root to: "reports#index"
   end
   root to: "backend/reports#index"
-  wash_out :reports
 
   # wash_out :reports
   # The priority is based upon order of creation: first created -> highest priority.
