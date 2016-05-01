@@ -1,10 +1,12 @@
 source 'https://rubygems.org'
 
-ruby '2.2.1'
+#ruby '2.2.1'
+ruby "2.2.2", :engine => "jruby", :engine_version => "9.0.4.0"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
 # Use sqlite3 as the database for Active Record
-gem 'pg'
+#gem 'pg'
+gem 'activerecord-jdbcpostgresql-adapter'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -35,16 +37,18 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'sqlite3'
-  gem 'byebug'
+  #gem 'sqlite3'
+  gem 'activerecord-jdbcsqlite3-adapter', '~> 1.3', '>= 1.3.20'
+  #gem 'jdbc-sqlite3', '~> 3.8', '>= 3.8.11.2'
+# gem 'byebug'
 end
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
-  gem 'web-console', '~> 2.0'
+  #gem 'web-console', '~> 2.0'
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-  gem 'spring'
+  #gem 'spring'
 end
 gem "migrant"
 gem "administrate", "~> 0.1.4"
@@ -55,6 +59,6 @@ gem 'the_role', '~> 3.0.0'
 gem 'inherited_resources'
 gem 'puma'
 gem 'cloudinary'
-gem 'carrierwave-google_drive'
+#gem 'carrierwave-google_drive'
 gem 'savon'
 gem 'rack-wwwhisper', '~> 1.0'
